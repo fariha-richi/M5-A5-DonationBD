@@ -23,24 +23,24 @@
 </head>
 
 <body class="lexend">
-    <main class="w-11/12">
+    <main class="w-full">
       
         <header class="text-4xl mb-10">
           <!-- navbar -->
-          <div class="flex-no-wrap flex w-full pl-32 fixed top-0 items-center justify-center bg-slate-200 z-10">
+          <div class="flex-no-wrap flex w-full fixed top-0 items-center justify-center bg-slate-200 z-10">
               <div class="navbar-start mt-4">
-                <button id="blogButton" class="text-xl lg:w-1/6  bg-lime-300 rounded-md p-2 text-center ml-4">Blog</button>
+                <button id="blogButton" class="text-xl lg:w-1/6  bg-lime-300 rounded-md p-2 text-center ml-20">Blog</button>
               </div>
               <div class="navbar-center lg:flex lg:h-32 mt-4">
               <!-- menu -->
-                <ul class="menu-horizontal pt-8 pr-8">
-                  <li class="hidden lg:block"><img class="w-5/6" src="assets/logo.png" alt="Logo Donate Bangladesh"></li>
+                <ul class="menu-horizontal pt-8">
+                  <li class="hidden lg:block"><img class="w-5/6" src="assets/logo.png" alt="Donate BD logo"></li>
                  
                   <li><a class="lg:text-xl text-lg">Donate Bangladesh</a></li>
                 </ul>
               </div>
               <div class="navbar-end flex lg:items-start justify-center gap-2">
-                <img class="mt-4" src="assets/coin.png" alt="coin">
+                <img class="mt-4" src="assets/coin.png" alt="coin image">
                 <div class="gap-1 lg:text-xl flex text-sm mt-4 mr-0 pr-0 items-center">
                   <a><span id="TxtCashInHand">5500</span></a>
                 <a><span>BDT</span></a>
@@ -50,16 +50,52 @@
       </header>
 
       <body>
-        <div class="min-h-screen ml-20 pl-20 mt-36">
-            <div class="mb-4 container p-6 ">
+        <div class="min-h-screen mt-36">
+            <div class="mb-4 container p-8">
                 <!-- Donation & History button -->
             <div class="flex justify-center gap-8">
                 <button
                   id="donation-tab"
-                  class="lg:w-1/6 lg:py-2 p-2 text-black font-semibold rounded-md bg-lime-300">Donation</button>
-                <button id="btnHistoryTab" class="lg:w-1/6 lg:py-2 p-2 border-4 rounded-md text-gray-700 font-semibold bg-neutral-50">History</button>
+                  class="lg:w-1/6 lg:py-4 text-black font-semibold rounded-md bg-lime-300">Donation</button>
+                <button id="btnHistoryTab" class="lg:w-1/6 lg:py-4 border-4 rounded-md text-gray-700 font-semibold bg-neutral-50">History</button>
               </div>
               </div>
+
+              <div id="donation-div">
+                <!-- card--1 -->
+                <section class="mt-4"> 
+                    <div class="flex justify-center">
+                        <div class="bg-base-100 lg:w-5/6 shadow-xl gap-x-4 gap-y-2 grid grid-cols-1 lg:grid-cols-2 rounded-md">
+                            <figure class="p-2">
+                            <img class="lg:w-5/6 h-full"
+                                src="assets/noakhali.png"
+                                alt="Noakhali donation image"
+                                class="rounded-xl" />
+                            </figure>
+                            <div class="card-body p-0 pr-4 lg:items-start items-center text-left">
+                                <button class="lg:text-xl w-1/3  bg-lime-300 rounded-md p-4 text-center flex justify-center ">
+                                    <span class="w-1/3"><img src="assets/coin.png" alt="coin image" ></span>
+                                    <span 
+                                        id="TxtNkhaliDonationAmt" 
+                                        class="mx-2">0
+                                    </span>
+                                    <span>BDT</span>
+                                </button>
+                            <div class="">
+                              <h2 class="card-title text-l">The recent floods in Noakhali have devastated homes and infrastructure, leaving countless families in urgent need of aid. Your generous contribution can bring hope and essential relief to those affected, providing necessities like food, shelter, and medical supplies. Every donation, no matter the size, has the power to make a meaningful difference in rebuilding lives and communities. Join us in this vital mission to support the flood victims and restore hope to those in need.</p>
+                            </div>
+
+                            <span class="w-11/12 text-start">
+                                <input id="valNkhaliAmt" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                            </span>
+                            
+                                <button id="IdBtnNkhali" class="lg:text-xl lg:w-11/12  bg-lime-300 rounded-md p-4 text-center flex justify-center">
+                                    <span>Donate Now</span>
+                                </button>
+                            
+                            </div>
+                        </div>
+                    </div>
               </div>
               
       </body>
