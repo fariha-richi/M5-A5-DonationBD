@@ -3,12 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+     <!-- daisyui -->  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Donate Bangladesh</title>
 
-    
+    <style>
+    .lexend
+    {font-family: "Lexend", sans-serif; }
+    </style>
+
 </head>
 
-<body>
-    
+<body class="lexend">
+    <main class="w-11/12">
+      
+        <header class="text-4xl mb-10">
+          <!-- navbar -->
+          <div class="flex-no-wrap flex w-full pl-32 fixed top-0 items-center justify-center bg-slate-200 z-10">
+              <div class="navbar-start mt-4">
+                <button id="blogButton" class="text-xl lg:w-1/6  bg-lime-300 rounded-md p-2 text-center ml-4">Blog</button>
+              </div>
+              <div class="navbar-center lg:flex lg:h-32 mt-4">
+              <!-- menu -->
+                <ul class="menu-horizontal pt-8 pr-8">
+                  <li class="hidden lg:block"><img class="w-5/6" src="assets/logo.png" alt="Logo Donate Bangladesh"></li>
+                 
+                  <li><a class="lg:text-xl text-lg">Donate Bangladesh</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end flex lg:items-start justify-center gap-2">
+                <img class="mt-4" src="assets/coin.png" alt="coin">
+                <div class="gap-1 lg:text-xl flex text-sm mt-4 mr-0 pr-0 items-center">
+                  <a><span id="TxtCashInHand">5500</span></a>
+                <a><span>BDT</span></a>
+                </div>
+              </div>
+            </div>
+      </header>
+
+    </main>
 </body>
 </html>
