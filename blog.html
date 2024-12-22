@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+     <!-- daisyui -->  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+     
+
+    <title>Donate Bangladesh</title>
+    <style>
+    .lexend
+    {font-family: "Lexend", sans-serif; }
+    </style>
+</head>
+
+<body class="lexend">
+    <main class="container w-full">
+      <header class="text-4xl mb-10">
+        <!-- navbar -->
+        <div class="flex-no-wrap flex lg:w-full items-center justify-center bg-slate-200 pl-16 pr-16 fixed top-0 z-10">
+            <div class="navbar-start mt-4">
+             
+            <a href="index.html" 
+              class="text-xl w-1/6 bg-lime-300 rounded-md p-2 lg:inline-block text-center">
+              Home
+            </a>
+            </div>
+           
+            <div class="navbar-center lg:flex h-32 mt-4">
+            <!-- menu -->
+              <ul class="menu-horizontal pt-8">
+                <li class="hidden lg:block"><img class="w-5/6" src="assets/logo.png" alt="Logo Donate Bangladesh"></li>
+               
+                <li><a class="text-xl">Donate Bangladesh</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex items-start gap-2 mt-6">
+              <img src="assets/coin.png" alt="coin">
+              <div class="gap-3 text-xl items-center flex">
+                <a><span id="TxtCashInHand">5500</span></a>
+              <a><span>BDT</span></a>
+              </div>
+            </div>
+        </div>
+        
+    </header>        
+
+        <body>
+          <div class="h-screen w-full flex items-center justify-center">
+            
+            <section class="w-full max-w-4xl mx-auto mt-48 p-6 bg-white rounded-lg shadow-lg">
+              <div class="flex items-center mb-6 rounded-lg shadow-lg ">
+                <span class="text-4xl ml-56"><h1>Important FAQ</h1></span>
+              <span class=""><img class="w-28 h-16 ml-4" src="assets/faq.png" alt="" srcset=""></span>
+              </div>
+              <!-- Q & A -->
+              <div class="collapse gap-4 bg-base-200">
+                <input type="radio" name="my-accordion-1" checked="checked">
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                  <p>The DOM is a programming interface for HTML and XML documents, representing the page's structure as a tree of objects that can be manipulated with JavaScript.
+                  </p>
+                </div>
+              </div>
+              <br>
+              <div class="collapse gap-4 bg-base-200">
+                <input type="radio" name="my-accordion-1">
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>We can select an element using methods like document.querySelector(), document.getElementById(), document.getElementsByClassName(), or document.getElementsByTagName().
+                    </p>
+                </div>
+              </div>
+              <br>
+              <div class="collapse gap-4 bg-base-200">
+                <input type="radio" name="my-accordion-1">
+                <div class="collapse-title text-xl font-medium">What is event delegation in the DOM and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation is a technique where a parent element listens for events on its child elements by utilizing event bubbling, reducing the need for multiple event listeners and improving performance.
+                  </p>
+                </div>
+              </div>    
+              <br>
+              <div class="collapse gap-4 bg-base-200">
+                <input type="radio" name="my-accordion-1">
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>We can use setAttribute(), getAttribute(), or removeAttribute() for attributes and modify the style property directly (e.g., element.style.color = "red";).</p>
+                </div>
+              </div>    
+            </section>
+            </div>
+              
+        </body>
+        <footer class="footer bg-slate-200 h-20 w-full mt-20 p-4"></footer>
+</footer>
+    </main>
+    
+</body>
+</html>
